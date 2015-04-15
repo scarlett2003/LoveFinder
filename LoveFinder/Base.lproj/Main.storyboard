@@ -67,7 +67,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kZw-tp-2sc">
                                 <rect key="frame" x="72" y="68" width="232" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zA0-Ak-Rwu">
                                 <rect key="frame" x="72" y="114" width="177" height="29"/>
@@ -84,6 +84,9 @@
                             </datePicker>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="170" minValue="100" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="bNH-3h-fUM">
                                 <rect key="frame" x="70" y="320" width="169" height="31"/>
+                                <connections>
+                                    <action selector="heightChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="jnd-90-MCt"/>
+                                </connections>
                             </slider>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QM3-lG-pxu">
                                 <rect key="frame" x="72" y="370" width="51" height="31"/>
@@ -93,6 +96,9 @@
                                 <state key="normal" title="確定">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="okTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="FIt-lI-iZD"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="輸入信息點擊確定按鈕顯示結果" translatesAutoresizingMaskIntoConstraints="NO" id="DMS-GD-RGP">
                                 <rect key="frame" x="16" y="487" width="288" height="43"/>
@@ -103,6 +109,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="birthday" destination="wkR-K4-gjZ" id="wS9-77-YDg"/>
+                        <outlet property="gender" destination="zA0-Ak-Rwu" id="npz-AY-Pzq"/>
+                        <outlet property="hasProperty" destination="QM3-lG-pxu" id="rCd-gj-lNu"/>
+                        <outlet property="height" destination="Vbe-sR-8yR" id="qhU-R1-NfD"/>
+                        <outlet property="heightNumber" destination="bNH-3h-fUM" id="obA-3b-mrT"/>
+                        <outlet property="name" destination="kZw-tp-2sc" id="FCx-0A-7An"/>
+                        <outlet property="result" destination="DMS-GD-RGP" id="2dk-RH-eE1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,7 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var name: UITextField!
+    
+    @IBOutlet weak var gender: UISegmentedControl!
+    
+    @IBOutlet weak var birthday: UIDatePicker!
+    
+    @IBOutlet weak var heightNumber: UISlider!
+    @IBOutlet weak var height: UIButton!
+    
+    @IBOutlet weak var hasProperty: UISwitch!
+    
+    @IBOutlet weak var result: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +34,13 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func heightChanged(sender: AnyObject) {
+    }
+    
+    
+    @IBAction func okTapped(sender: AnyObject) {
+    }
+    
+    
 }
 
