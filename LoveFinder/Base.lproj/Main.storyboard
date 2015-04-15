@@ -50,13 +50,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbe-sR-8yR">
-                                <rect key="frame" x="248" y="320" width="56" height="30"/>
-                                <state key="normal" title="170公分">
-                                    <color key="titleColor" red="0.30302981029999998" green="0.30983111390000001" blue="0.33023502490000001" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbW-dZ-LOK">
                                 <rect key="frame" x="16" y="371" width="30" height="30"/>
                                 <state key="normal" title="房產">
@@ -106,6 +99,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="170公分" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Scb-eq-OeL">
+                                <rect key="frame" x="245" y="324" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -113,7 +112,7 @@
                         <outlet property="birthday" destination="wkR-K4-gjZ" id="wS9-77-YDg"/>
                         <outlet property="gender" destination="zA0-Ak-Rwu" id="npz-AY-Pzq"/>
                         <outlet property="hasProperty" destination="QM3-lG-pxu" id="rCd-gj-lNu"/>
-                        <outlet property="height" destination="Vbe-sR-8yR" id="qhU-R1-NfD"/>
+                        <outlet property="height" destination="Scb-eq-OeL" id="JPX-9C-5g8"/>
                         <outlet property="heightNumber" destination="bNH-3h-fUM" id="obA-3b-mrT"/>
                         <outlet property="name" destination="kZw-tp-2sc" id="FCx-0A-7An"/>
                         <outlet property="result" destination="DMS-GD-RGP" id="2dk-RH-eE1"/>
